@@ -1,41 +1,45 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Privet — документы</title>
-  <style>
-    /* Небольшая простая стилизация, чтобы выглядело аккуратно */
-    html,body { height:100%; margin:0; font-family: Inter, Arial, sans-serif; background:#f7f7fb; color:#111; }
-    .wrap { min-height:100%; display:flex; align-items:center; justify-content:center; padding:24px; box-sizing:border-box; }
-    .card { width:100%; max-width:720px; background:#fff; border-radius:12px; box-shadow:0 6px 24px rgba(11,15,30,0.06); padding:28px; }
-    h1 { margin:0 0 12px 0; font-size:20px; }
-    p { margin:0 0 18px 0; color:#444; }
-    .grid { display:flex; gap:12px; flex-wrap:wrap; }
-    .btn {
-      display:inline-block; padding:10px 14px; border-radius:8px; text-decoration:none; border:1px solid #e6e8ef;
-      background:#f8f9fc; color:#0b1220; font-weight:600; cursor:pointer;
-    }
-    .btn:active { transform:translateY(1px); }
-    .btn-primary { background:#0b5fff; color:#fff; border-color:transparent; }
-    .note { margin-top:16px; color:#666; font-size:13px; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Документы сервиса Privet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        h1 {
+            margin-bottom: 40px;
+        }
+
+        .btn {
+            display: block;
+            width: 260px;
+            margin: 15px auto;
+            padding: 12px 0;
+            background: #e0e0e0;
+            color: #000;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #cccccc;
+        }
+    </style>
 </head>
 <body>
-  <div class="wrap">
-    <div class="card" role="main">
-      <h1>Документы Privet Platform</h1>
-      <p>Выберите страницу для просмотра:</p>
 
-      <div class="grid" role="navigation" aria-label="Меню документов">
-        <!-- относительные ссылки на папки; GitHub Pages будет обслуживать privacy/index.html и offer/index.html -->
-        <a class="btn btn-primary" href="./privacy/" title="Политика конфиденциальности">Политика (privacy)</a>
-        <a class="btn" href="./offer/" title="Оферта">Оферта (offer)</a>
-        <a class="btn" href="./privacy/" title="Пользовательское соглашение (в разработке)">Пользовательское соглашение (в разработке)</a>
-      </div>
+    <h1>Документы сервиса Privet</h1>
 
-      <p class="note">Если какая-то страница не открывается — проверь название папки и файл <code>index.html</code> внутри неё (регистр букв важен: <code>privacy</code> ≠ <code>Privacy</code>).</p>
-    </div>
-  </div>
+    <a class="btn" href="privacy/">Политика конфиденциальности</a>
+    <a class="btn" href="terms/">Пользовательское соглашение</a>
+    <a class="btn" href="offer/">Оферта</a>
+
 </body>
 </html>
